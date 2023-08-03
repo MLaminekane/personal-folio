@@ -272,6 +272,9 @@ body{
   #code-view{
     display: flex;
   }
+  #about{
+    margin-top: 1vh;
+  }
   
   }
 /*
