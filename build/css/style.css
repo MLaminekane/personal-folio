@@ -6,7 +6,7 @@ body{
   /*bouton defilement du bas au home */
   #arrow-btn {
   border-radius: 25px;
-  margin-top: 10vh;
+  margin-top: 15vh;
   }
   #arrow-btn svg {
   transition: transform 0.6s ease-in-out;
@@ -232,7 +232,6 @@ body{
     height: 7vh;
   }
   #home{
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
