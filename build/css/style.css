@@ -274,6 +274,9 @@ body{
   #about{
     margin-top: 1vh;
   } 
+  #copyright-lamine{
+    margin-top: 25vh;}
+
 } 
 
 @media screen and (max-width: 950px){
