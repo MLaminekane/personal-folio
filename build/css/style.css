@@ -252,17 +252,18 @@ body{
     border-radius: 25px;
   
   }
+
   #contact h1, #email h1{
     font-size: 20px;
   }
   .cssbuttons-io {
   width: 25vw;
-  height: 6vh;
+  height: 7vh;
   
   }
   #view{
     width: 25vw;
-    height: 6vh;
+    height: 7vh;
   }
   .rounded-lg{
     margin-top: 1vh;
