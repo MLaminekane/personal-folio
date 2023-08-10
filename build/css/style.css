@@ -224,6 +224,7 @@ body{
   #nom{
     margin-top: 5vh;
     font-size: 40px;
+    margin-top: 1vh;
   }
   .cssbuttons-io{
     width: 40vw;
