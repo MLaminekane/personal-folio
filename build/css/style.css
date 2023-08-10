@@ -1,27 +1,32 @@
-body{
+body {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
   scroll-behavior: smooth;
-  }
-  /*bouton defilement du bas au home */
-  #arrow-btn {
+}
+
+/* Bouton de défilement du bas vers le haut */
+#arrow-btn {
   border-radius: 25px;
   margin-top: 15vh;
-  }
-  #arrow-btn svg {
+}
+
+#arrow-btn svg {
   transition: transform 0.6s ease-in-out;
-  }
-  #arrow-btn:hover svg {
+}
+
+#arrow-btn:hover svg {
   transform: translateY(-15px);
-  }
-  
-  /*input du nom et email*/
-  .inputbox, .inputbox2 {
+}
+
+/* Styles pour les champs de nom et d'e-mail */
+.inputbox,
+.inputbox2 {
   position: relative;
   width: 196px;
-  }
-  .inputbox input {
+}
+
+.inputbox input {
   position: relative;
   width: 100%;
   padding: 20px 10px 10px;
@@ -34,27 +39,27 @@ body{
   letter-spacing: 0.05em;
   transition: 0.5s;
   z-index: 10;
-  }
-  
-  .inputbox label{
+}
+
+.inputbox label {
   position: absolute;
   left: 0;
   padding: 20px 10px 10px;
   font-size: 1em;
   color: #8f8f8f;
-  letter-spacing: 00.05em;
+  letter-spacing: 0.05em;
   transition: 0.5s;
   pointer-events: none;
-  }
-  
-  .inputbox input:valid ~label,
-  .inputbox input:focus ~label {
+}
+
+.inputbox input:valid ~label,
+.inputbox input:focus ~label {
   color: #45f3ff;
   transform: translateX(-10px) translateY(-34px);
-  font-size: 0,75em;
-  }
-  
-  .inputbox i {
+  font-size: 0.75em;
+}
+
+.inputbox i {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -65,25 +70,29 @@ body{
   transition: 0.5s;
   pointer-events: none;
   z-index: 9;
-  }
-  
-  .inputbox input:valid ~i,
-  .inputbox input:focus ~i {
+}
+
+.inputbox input:valid ~i,
+.inputbox input:focus ~i {
   height: 44px;
-  }
-  .inputbox2 input:valid ~i, .inputbox2 input:focus ~i {
+}
+
+.inputbox2 input:valid ~i,
+.inputbox2 input:focus ~i {
   height: 70;
-  }
-  
-  .form-container {
+}
+
+/* Styles pour le formulaire */
+.form-container {
   max-width: 700px;
   margin: 30px;
   background-color: #001925;
   padding: 30px;
   border-left: 5px solid rgb(79 70 229);
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
-  }
-  .form-container .form .textarea {
+}
+
+.form-container .form .textarea {
   width: 100%;
   padding: 10px;
   border: none;
@@ -95,11 +104,13 @@ body{
   margin-bottom: 20px;
   border-left: 1px solid transparent;
   transition: all 0.2s ease-in-out;
-  }
-  .form-container .form .textarea:focus {
+}
+
+.form-container .form .textarea:focus {
   border-left: 5px solid rgb(79 70 229);
-  }
-  .form-container .form .button-container .send-button {
+}
+
+.form-container .form .button-container .send-button {
   flex-basis: 70%;
   background: #141C28;
   padding: 10px;
@@ -108,16 +119,17 @@ body{
   font-weight: bold;
   border: 1px solid transparent;
   transition: all 0.2s ease-in-out;
-  }
-  .form-container .form .button-container .send-button:hover {
+}
+
+.form-container .form .button-container .send-button:hover {
   background: transparent;
   border: 1px solid rgb(79 70 229);
-  color: #fff    
-  }
-  
-  
-  
-  .cssbuttons-io {
+  color: #fff;
+}
+
+/* Styles pour les boutons */
+.cssbuttons-io,
+.cssbuttons-io-2 {
   position: relative;
   font-family: inherit;
   font-weight: 500;
@@ -125,224 +137,218 @@ body{
   letter-spacing: 0.05em;
   border-radius: 5em;
   border: none;
+  color: ghostwhite;
+  overflow: hidden;
+  width: 12vw;
+  height: 6vh;
+  margin-top: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cssbuttons-io{
   background: linear-gradient(to right,#141C28, #45f3ff);
-  color: ghostwhite;
-  overflow: hidden;
-  width: 12vw;
-  height: 6vh;
-  margin-top: 1vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  }
-  .cssbuttons-io-2{
-  position: relative;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 18px;
-  letter-spacing: 0.05em;
-  border-radius: 5em;
-  border: none;
-  color: ghostwhite;
-  overflow: hidden;
-  width: 12vw;
-  height: 6vh;
-  margin-top: 1vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  }
-  
-  
-  .cssbuttons-io span{
+
+}
+
+.cssbuttons-io span {
   position: relative;
   z-index: 10;
   transition: color 0.4s;
   display: inline-flex;
   align-items: center;
   padding: 0.8em 1.2em 0.8em 1.05em;
-  }
-  
-  .cssbuttons-io::before,
-  .cssbuttons-io::after {
+}
+
+.cssbuttons-io::before,
+.cssbuttons-io::after {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: 0;
-  }
-  
-  .cssbuttons-io::before {
+}
+
+.cssbuttons-io::before {
   content: "";
   background: #141C28;
   width: 120%;
   left: -10%;
   transform: skew(30deg);
   transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
-  }
-  
-  .cssbuttons-io:hover::before {
+}
+
+.cssbuttons-io:hover::before {
   transform: translate3d(100%, 0, 0);
-  }
-  
-  .cssbuttons-io:active {
+}
+
+.cssbuttons-io:active {
   transform: scale(0.95);
-  }
-  
-  #home{
+}
+
+/* Animation pour la section home */
+#home {
   animation: animation 4s ease;
-  }
-  
-  @keyframes animation{
+}
+
+@keyframes animation {
   0% {
     opacity: 0;
     transform: translateY(-80px);
   }
-  100% { 
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
-  }
-
-  
+}
     
-  @media screen and (min-width: 561px) and (max-width: 1024px) {
-    #bloc2{
+/* Styles pour les écrans de taille moyenne (561px - 1024px) */
+@media screen and (min-width: 561px) and (max-width: 1024px) {
+  #bloc2 {
     margin-top: 16vh;
   }
-  #img1{
+
+  #img1 {
     padding: 2vw;
   }
 
-  #contact-me{
+  #contact-me {
     margin-left: 8vw;
   }
-  h1{
+
+  h1 {
     line-height: 2vh;
   }
-  #nom{
+
+  #nom {
     margin-top: 5vh;
     font-size: 40px;
-    margin-top: 1vh;
   }
-  .cssbuttons-io{
+
+  .cssbuttons-io {
     width: 40vw;
     height: 7vh;
   }
-  #home{
+
+  #home {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  #name{
+
+  #name {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  #hi{
+  #hi {
     font-size: 40px;
   }
 
-  #junior{
+  #junior {
     font-size: 5px;
   }
-  #bouton-bas{
+
+  #bouton-bas {
     border-radius: 25px;
-  
   }
 
-  #contact h1, #email h1{
+  #contact h1,
+  #email h1 {
     font-size: 20px;
   }
-  .cssbuttons-io {
-  width: 25vw;
-  height: 7vh;
-  
-  }
-  #view{
+
+  .cssbuttons-io,
+  #view {
     width: 25vw;
     height: 7vh;
   }
-  .rounded-lg{
+
+  .rounded-lg {
     margin-top: 1vh;
   }
-  #code-view{
+
+  #code-view {
     display: flex;
   }
-  #about{
+
+  #about {
     margin-top: 1vh;
-  } 
-  #copyright-lamine{
-    margin-top: 25vh;}
+  }
 
-} 
+  #copyright-lamine {
+    margin-top: 25vh;
+  }
+}
 
-@media screen and (max-width: 950px){
-
-  #projects, #pro-content, #project-no-page{
+/* Styles pour les écrans de taille petite (max-width: 950px) */
+@media screen and (max-width: 950px) {
+  #projects,
+  #pro-content,
+  #project-no-page {
     display: flex;
     flex-direction: column;
   }
-
-
 }
 
-@media (min-width: 1025px) and (max-width: 1280px){
-  #project-no-page{
+/* Styles pour les écrans de taille moyenne (1025px - 1280px) */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  #project-no-page {
     height: 250px;
   }
 }
-  
-  
-@media screen and (max-width: 560px){
-  #nom{
+
+/* Styles pour les écrans de taille très petite (max-width: 560px) */
+@media screen and (max-width: 560px) {
+  #nom {
     margin-top: 5vh;
     font-size: 40px;
   }
-  .cssbuttons-io{
+
+  .cssbuttons-io {
     width: 30vw;
     height: 6vh;
   }
-  #home{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #name{
+
+  #home,
+  #name {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  #hi{
+  #hi {
     font-size: 40px;
   }
 
-  #junior{
+  #junior {
     font-size: 5px;
   }
-  #bouton-bas{
+
+  #bouton-bas {
     border-radius: 25px;
-  
   }
-  .rounded-lg{
+
+  .rounded-lg {
     margin-top: 1vh;
   }
-  #view{
+
+  #view {
     width: 25vw;
     height: 6vh;
   }
-  #code-view{
+
+  #code-view {
     display: flex;
     align-items: center;
     justify-content: center;
-
   }
 }
+
 
 
   
