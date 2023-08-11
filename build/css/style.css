@@ -8,6 +8,7 @@ html{
   scroll-behavior: smooth;
 }
 
+
 /* Bouton de défilement du bas vers le haut */
 #arrow-btn {
   border-radius: 25px;
@@ -195,6 +196,7 @@ html{
   animation: animation 4s ease;
 }
 
+
 .animation-img {
   animation: animation_img ease 4s forwards; /* Utilisez 1s pour la durée de l'animation */
   opacity: 0; /* Commence avec une opacité de 0 */
@@ -236,14 +238,14 @@ html{
     transform: translateY(-25px);
   }
 }
-    
+
 /* Styles pour les écrans de taille moyenne (561px - 1024px) */
 @media screen and (min-width: 561px) and (max-width: 1024px) {
   #bloc2 {
     margin-top: 16vh;
   }
 
-  #img1 {
+  #lamine-img {
     padding: 2vw;
   }
 
@@ -332,6 +334,13 @@ html{
 @media (min-width: 1025px) and (max-width: 1280px) {
   #project-no-page {
     height: 250px;
+  }
+  #lamine-img{
+    height: 70vh;
+    width: 110vw;
+  }
+  #about-section{
+    margin-left: 3vw;
   }
 }
 
