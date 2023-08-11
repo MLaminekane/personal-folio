@@ -244,7 +244,10 @@ html{
   #bloc2 {
     margin-top: 16vh;
   }
-
+  #about-skills{
+    padding: 0;
+    width: 100vw;
+  }
   #lamine-img {
     padding: 2vw;
   }
