@@ -194,8 +194,16 @@ html{
 #home {
   animation: animation 4s ease;
 }
-.rounded-lg{
-  animation: animation_img ease 4s;
+
+.animation-img {
+  animation: animation_img ease 4s forwards; /* Utilisez 1s pour la durée de l'animation */
+  opacity: 0; /* Commence avec une opacité de 0 */
+  transform: translateX(-80px); /* Commence avec un décalage vers la gauche */
+}
+.animation-skills {
+  animation: animation-skills ease 7s forwards; /* Utilisez 1s pour la durée de l'animation */
+  opacity: 0; /* Commence avec une opacité de 0 */
+  transform: translateY(-80px); /* Commence avec un décalage vers la gauche */
 }
 
 @keyframes animation {
@@ -216,6 +224,16 @@ html{
   100% {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+@keyframes animation-skills {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-25px);
   }
 }
     
