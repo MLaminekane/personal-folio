@@ -4,6 +4,9 @@ body {
   box-sizing: content-box;
   scroll-behavior: smooth;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 /* Bouton de défilement du bas vers le haut */
 #arrow-btn {
@@ -191,6 +194,9 @@ body {
 #home {
   animation: animation 4s ease;
 }
+.rounded-lg{
+  animation: animation_img ease 4s;
+}
 
 @keyframes animation {
   0% {
@@ -200,6 +206,16 @@ body {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@keyframes animation_img {
+  0% {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
     
