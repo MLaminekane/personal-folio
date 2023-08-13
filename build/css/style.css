@@ -331,6 +331,10 @@ html{
     display: flex;
     flex-direction: column;
   }
+  #junior{
+    font-size: 40px;
+  }
+
 }
 
 /* Styles pour les écrans de taille moyenne (1025px - 1280px) */
@@ -345,12 +349,15 @@ html{
   #about-section{
     margin-left: 3vw;
   }
+  #junior{
+    font-size: 40px;
+  }
 }
 
 /* Styles pour les écrans de taille très petite (max-width: 560px) */
 @media screen and (max-width: 560px) {
   #nom {
-    margin-top: 5vh;
+    margin-top: 1vh;
     font-size: 40px;
   }
 
@@ -369,10 +376,6 @@ html{
 
   #hi {
     font-size: 40px;
-  }
-
-  #junior {
-    font-size: 5px;
   }
 
   #bouton-bas {
