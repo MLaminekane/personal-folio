@@ -385,6 +385,13 @@ html{
   .rounded-lg {
     margin-top: 1vh;
   }
+  #jsd{
+    width: 80vw;
+  }
+  
+  #junior{
+    font-size: 30px;
+  }
 
   #view {
     width: 25vw;
