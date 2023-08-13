@@ -393,11 +393,12 @@ html{
     align-items: center;
     justify-content: center;
   }
+
+  #contact-me{
+    margin-left: 8vw;
+  }
 }
 
-
-
-  
  /*
 ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 */
