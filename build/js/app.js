@@ -67,6 +67,9 @@ changeColor.addEventListener('click', () => {
   contact.style.backgroundColor = isDarkMode ? 'black' : (isDarkMode ? '' : '#141C28');
   contact.style.color = isDarkMode ? 'white' : 'black'; 
 
+  let svg = document.querySelector('.svg-form');
+  svg.style.fill = isDarkMode ? 'black' : '#141C28';
+
   let subtitleP = document.querySelector("#junior");
   subtitleP.style.color = isDarkMode ? 'white' : '#141C28'; 
 

@@ -353,7 +353,7 @@ html{
     height: 250px;
   }
   #lamine-img{
-    height: 70vh;
+    height: 60vh;
     width: 110vw;
   }
   #about-section{
@@ -363,6 +363,7 @@ html{
     font-size: 40px;
   }
 }
+
 
 /* Styles pour les écrans de taille très petite (max-width: 560px) */
 @media screen and (max-width: 560px) {
