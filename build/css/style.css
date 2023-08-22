@@ -353,11 +353,13 @@ html{
     height: 250px;
   }
   #lamine-img{
-    height: 55vh;
-    width: 110vw;
+    margin-left: 5vw;
+    height: 45vh;
+    width: 100vw;
   }
   #about-section{
     margin-left: 3vw;
+    padding: 4vw;
   }
   #junior{
     font-size: 40px;
