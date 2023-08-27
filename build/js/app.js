@@ -70,7 +70,6 @@ changeColor.addEventListener('click', () => {
   let svg = document.querySelectorAll('.svg-form');
   svg.forEach(form => {
     form.style.fill = isDarkMode ? 'black' : '#141C28';
-
   })
 
   let subtitleP = document.querySelector("#junior");
@@ -93,3 +92,6 @@ changeColor.addEventListener('click', () => {
   moonIcon.style.display = isDarkMode ? 'none' : 'inline';
   sunIcon.style.display = isDarkMode ? 'inline' : 'none';
 });
+
+
+
