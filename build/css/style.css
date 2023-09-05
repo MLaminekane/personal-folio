@@ -302,10 +302,11 @@ html{
     justify-content: center;
     width: 90vw;
   }
-  .cssbuttons-io {
+  .cssbuttons-io, .cssbuttons-io-2 {
     width: 25vw;
     height: 5vh;
   }
+
   #shodow-color{
     display: flex;
     flex-direction: column;
