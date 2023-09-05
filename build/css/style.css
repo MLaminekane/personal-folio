@@ -302,14 +302,11 @@ html{
     justify-content: center;
     width: 90vw;
   }
-  .cssbuttons-io {
+  .cssbuttons-io, .cssbuttons-io-2 {
     width: 25vw;
     height: 5vh;
   }
-  .cssbuttons-io-2{
-    width: 26vw;
-    height: 5vh;
-  }
+
   #lamine-img{
     width: 270px;
     height: 230px;
@@ -323,6 +320,9 @@ html{
   #about-test{
     width: 100%;
   }
+  #contact-me{
+    margin-left: 9vw;
+  }
 
 
 
@@ -331,20 +331,20 @@ html{
 @media  (max-width: 768px) {
   .cssbuttons-io, .cssbuttons-io-2 {
     width: 20vw;
-    height: 5vh;
+    height: 6vh;
   }
 }
 @media screen and (min-width: 561px) and (max-width: 1024px) {
   .cssbuttons-io, .cssbuttons-io-2 {
     width: 20vw;
-    height: 5vh;
+    height: 6vh;
   }
 } 
 
 @media screen and (max-width: 950px) {
   .cssbuttons-io, .cssbuttons-io-2 {
     width: 20vw;
-    height: 5vh;
+    height: 6vh;
   }
 }
 
@@ -353,7 +353,10 @@ html{
 }
 
 @media screen and (max-width: 560px) {
-
+  .cssbuttons-io, .cssbuttons-io-2 {
+    width: 20vw;
+    height: 6vh;
+  }
 } 
 
 /*
