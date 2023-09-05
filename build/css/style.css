@@ -98,8 +98,8 @@ html{
 
 
 #lamine-img{
-  width: 500px;
-  height: 300px;
+  width: 350px;
+  height: 250px;
 }
 
 
@@ -271,9 +271,6 @@ html{
   transform: scale(0.95);
 }
 
-.button {
-
-}
 
 
 
@@ -285,6 +282,9 @@ html{
   background-color: #ccc;  
 }
 
+.cssbuttons-io-2{
+  margin-left: 1vw;
+}
 
 
 
@@ -302,27 +302,50 @@ html{
     justify-content: center;
     width: 90vw;
   }
-  .cssbuttons-io, .cssbuttons-io-2 {
+  .cssbuttons-io {
     width: 25vw;
     height: 5vh;
+  }
+  .cssbuttons-io-2{
+    width: 26vw;
+    height: 5vh;
+  }
+  #lamine-img{
+    width: 270px;
+    height: 230px;
   }
 
   #shodow-color{
     display: flex;
     flex-direction: column;
+    width: 100vw;
   }
+  #about-test{
+    width: 100%;
+  }
+
+
 
 }
 
 @media  (max-width: 768px) {
-
+  .cssbuttons-io, .cssbuttons-io-2 {
+    width: 20vw;
+    height: 5vh;
+  }
 }
 @media screen and (min-width: 561px) and (max-width: 1024px) {
-
+  .cssbuttons-io, .cssbuttons-io-2 {
+    width: 20vw;
+    height: 5vh;
+  }
 } 
 
 @media screen and (max-width: 950px) {
-
+  .cssbuttons-io, .cssbuttons-io-2 {
+    width: 20vw;
+    height: 5vh;
+  }
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
@@ -332,6 +355,7 @@ html{
 @media screen and (max-width: 560px) {
 
 } 
+
 /*
 ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 */
