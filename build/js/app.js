@@ -1,41 +1,25 @@
-//bouton-navigation sur la page home
+// Animation de navigation
 const arrowBtn = document.getElementById('arrow-btn');
-const aboutSkillsSection = document.getElementById('about-skills');
-arrowBtn.addEventListener('click', function (e) {
+const aboutSection = document.getElementById('about-skills');
+
+arrowBtn.addEventListener('click', function(e) {
   e.preventDefault();
-  const scrollDistance = aboutSkillsSection.getBoundingClientRect().top;
 
-  const animationDuration = 1000; // 3 seconds
-  const startTime = performance.now();
+  const {top} = aboutSection.getBoundingClientRect();
+  const duration = 1000;
+
   function scrollStep(timestamp) {
-    const currentTime = timestamp - startTime;
-    const progress = Math.min(currentTime / animationDuration, 1);
-    const newScrollPosition = scrollDistance * progress;
-    window.scrollTo(0, newScrollPosition);
+    const progress = (timestamp - startTime) / duration;
+    window.scrollTo(0, top * progress);
 
-    if (currentTime < animationDuration) {
-      requestAnimationFrame(scrollStep);
+    if(timestamp < startTime + duration) {
+      requestAnimationFrame(scrollStep); 
     }
   }
+
+  const startTime = performance.now();
   requestAnimationFrame(scrollStep);
 });
-
-//animation de l'image about
-const img = document.getElementById('lamine-img');
-const observerOptions = {
-  root: null,
-  rootMargin: '0px',
-  threshold: 0.5 
-};
-const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      img.classList.add('animation-img');
-      observer.unobserve(entry.target);
-    }
-  });
-}, observerOptions);
-observer.observe(document.getElementById('about-skills'));
 
 //background black on button click
 let changeColor = document.getElementById('back-color');
@@ -92,6 +76,3 @@ changeColor.addEventListener('click', () => {
   moonIcon.style.display = isDarkMode ? 'none' : 'inline';
   sunIcon.style.display = isDarkMode ? 'inline' : 'none';
 });
-
-
-
