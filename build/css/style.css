@@ -297,6 +297,10 @@ transform: scale(0.95);
   border: 1px solid rgb(79 70 229);
   color: #fff;
   }
+
+  #shadow-color{
+    margin-top: 2vh;
+  }
 @media (max-width: 480px) {
   #name{
   display: flex;
@@ -334,10 +338,11 @@ transform: scale(0.95);
     width: 17vw;
     height: 10vh;
     }
-  } 
+  }
+
   @media screen and (max-width: 1368px) {
     .cssbuttons-io, .cssbuttons-io-2 {
-    width: 17vw;
+    width: 13vw;
     height: 5vh;
     }
   }
