@@ -132,6 +132,10 @@ transform: translate3d(100%, 0, 0);
 .cssbuttons-io:active {
 transform: scale(0.95);
 }
+.cssbuttons-io-2{
+  margin-left: 1vw;
+}
+.active\:bg-indigo-500:active
 
 #shadow-color {
   margin-top: 2vh;
