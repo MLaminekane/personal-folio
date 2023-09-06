@@ -192,7 +192,7 @@ transform: scale(0.95);
   z-index: 10;
 }
 
-.inputbox label {
+.inputbox label, .inputbox2 label {
   position: absolute;
   left: 0;
   padding: 20px 10px 10px;
@@ -204,13 +204,15 @@ transform: scale(0.95);
 }
 
 .inputbox input:valid ~ label,
-.inputbox input:focus ~ label {
+.inputbox input:focus ~ label,
+.inputbox2 input:valid ~ label,
+.inputbox2 input:focus ~ label{
   color: #45f3ff;
   transform: translateX(-10px) translateY(-34px);
   font-size: 0.75em;
 }
 
-.inputbox i {
+.inputbox i, .inputbox2 i {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -279,21 +281,22 @@ transform: scale(0.95);
   margin-bottom: 5px;
 }
 
-.form-container .form .input-group input[type="text"],
-.form-container .form .input-group input[type="email"] {
+.form-container .form .button-container .send-button {
+  flex-basis: 70%;
+  background: #141C28;
   padding: 10px;
-  border: none;
-  outline: none;
-  background-color: #141c28;
   color: #fff;
-  border-left: 1px solid transparent;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid transparent;
   transition: all 0.2s ease-in-out;
-}
-
-.form-container .form .input-group input[type="text"]:focus,
-.form-container .form .input-group input[type="email"]:focus {
-  border-left: 5px solid rgb(79, 70, 229);
-}
+  }
+  
+  .form-container .form .button-container .send-button:hover {
+  background: transparent;
+  border: 1px solid rgb(79 70 229);
+  color: #fff;
+  }
 @media (max-width: 480px) {
   #name{
   display: flex;
@@ -301,9 +304,7 @@ transform: scale(0.95);
   justify-content: center;
   flex-direction: column;
   }
-  #contact-me{
-  margin-left: 12vw;
-  }
+
   }
   
   @media screen and (max-width: 950px) {
@@ -311,13 +312,6 @@ transform: scale(0.95);
   width: 15vw;
   height: 7vh;
   }
-  }
-  
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    #contact-me{
-      margin-left: 1vw;
-    }
-
   }
   
   @media screen and (max-width: 560px) {
@@ -329,10 +323,31 @@ transform: scale(0.95);
   @media screen and (max-width: 820px) {
     .cssbuttons-io, .cssbuttons-io-2 {
     width: 20vw;
-    height: 5vh;
+    height: 6vh;
     }
     #contact-me{
-      margin-left: 5vw;
+      margin-left: 4vw;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .cssbuttons-io, .cssbuttons-io-2 {
+    width: 17vw;
+    height: 10vh;
+    }
+  } 
+  @media screen and (max-width: 1368px) {
+    .cssbuttons-io, .cssbuttons-io-2 {
+    width: 17vw;
+    height: 5vh;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .cssbuttons-io, .cssbuttons-io-2 {
+    width: 20vw;
+    height: 5.5vh;
+    }
+    #contact-me{
+      margin-left: 9vw;
     }
   }
 
