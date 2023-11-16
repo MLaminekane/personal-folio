@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MLamine Kane - Portfolio</title>
-  <meta name="description" content="Hi, my name is MLamine Kane, a junior developer and a student in software engineering. I'm passionate about sports, gaming, technology, and building projects with intuitive user interfaces. I am constantly learning and staying up-to-date with the latest technologies to present you with quality content despite my limited experience. Explore my portfolio to see my latest projects and connect with me on various social networks.">
+  <meta name="description" content="Hi, my name is MLamine Kane, a junior developer and a student in software engineering.">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../dist/output.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
   <link rel="icon" type="image/png" href="images/logo.webp">
   <!-- Instant Alert V3 Configuration -->
@@ -18,22 +19,31 @@
 </head>
 <body>
 
-  <button id="back-color" style="margin-left: 95%;position: absolute;margin-top: 3vw;">
+  <!-- <button id="back-color" style="margin-left: 95%;position: absolute;margin-top: 3vw;">
     <i id="moon" class="fa-solid fa-moon fa-xl"></i>
     <i id="sun" class="fa-solid fa-sun fa-xl" style="color: #ffffff;"></i>
-  </button>
-
+  </button> -->
 
   <div class="max-w-md mx-auto flex flex-col md:flex-row">
     <div class="w-full md:w-1/2 mb-4 md:mb-0">
-      <div id="home" class="text-white mt-12 text-3xl flex flex-col items-center justify-center" style="height: 100vh;">
-        <h1 id="name" class="font-bold text-center flex items-center" style="color: #141C28;">
-          <span id="hi" class="text-base md:text-xl lg:text-2xl">Hi, my name is</span>
-          <span id="nom" class="text-indigo-600 uppercase ml-2 text-xl md:text-3xl lg:text-4xl">lamine kane.</span>
+      <div id="home" class="text-white mt-8 text-3xl flex flex-col ml-12 justify-center" style="height: 100vh;">
+        <h1 id="name" class="font-bold text-center flex flex-col" style="color: #141C28;">
+          <span id="hi" class="ml-2 text-4xl md:text-6xl lg:text-6xl">Hey there! I'm -</span>
+          <span id="nom" class="text-2xl md:text-4xl lg:text-4xl">Lamine <span class="kane">Kane</span>.</span>
         </h1>
-        <div id="jsd" style="text-align: center;" >
-          <p id="junior" style="color: #141C28; font-weight: 600;" class="mt-4">Junior Software Developer</p>
+        <div id="jsd">
+          <p id="junior" style="color: #141C28; font-weight: 600;" class="mt-12 ml-6">Junior Software Developer</p>
         </div>
+  
+        <div class="buttons ml-6">
+          <a href="https://github.com/MLaminekane" class="button"> <i class="fa-brands fa-github fa-xl"></i> <span>Github</span> </a>
+          <a href="https://twitter.com/mlaminekane01" class="button"> <i class="fa-brands fa-twitter fa-xl"></i> <span>Twitter</span> </a>
+          <a href="https://www.linkedin.com/in/lamine-kane-2767a1223/" class="button"> <i class="fa-brands fa-linkedin fa-xl"></i> <span>LinkedIn</span> </a>
+          <a href="mailto:mlaminekane01@gmail.com" class="button"><i class="fa-regular fa-envelope fa-xl"></i>
+            mail
+          </a>
+        </div>
+  
         <div id="bouton-bas" class="flex flex-col items-center justify-center">
           <a id="arrow-btn" class="arrow-btn inline-flex items-center gap-2 rounded border border-indigo-600 py-3 text-indigo-600 hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring active:bg-indigo-500 transform rotate-180 transition-transform ease-in-out duration-600 mt-4 md:mt-6" href="#about-skills">
             <svg class="h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -45,7 +55,7 @@
     </div>
   </div>
 
-  <div id="about-skills" style="background-color: #141C28; height: auto; padding: 5vh" class="flex flex-col md:flex-row justify-center justify-evenly ">
+  <div id="about-skills" style="background-color: #111745; height: auto; padding: 5vh" class="flex flex-col md:flex-row justify-center justify-evenly ">
 
     <div id="about-section" class="md:ml-12 md:mt-0  w-full md:w-1/2 ">
       <h1 id="about" style="color: red; font-size: 30px; font-weight: 800; margin-left: 1rem;">
@@ -100,14 +110,37 @@
     </div>
   </div>
   <svg style="margin-top: -1vh;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path class="svg-form" fill="#141C28" fill-opacity="1" d="M0,128L40,144C80,160,160,192,240,176C320,160,400,96,480,90.7C560,85,640,139,720,138.7C800,139,880,85,960,74.7C1040,64,1120,96,1200,112C1280,128,1360,128,1400,128L1440,128L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+    <path class="svg-form" fill="#111745" fill-opacity="1" d="M0,128L40,144C80,160,160,192,240,176C320,160,400,96,480,90.7C560,85,640,139,720,138.7C800,139,880,85,960,74.7C1040,64,1120,96,1200,112C1280,128,1360,128,1400,128L1440,128L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
   </svg>
 
-  <div id="projects" class="w-full bg-white flex flex-col items-center">
+  <div id="projects" class="w-full bg-white-50 flex flex-col items-center">
     <h1 id="about" class="text-3xl font-bold uppercase">Projects</h1>
     <section  style="width: 70vw;justify-content: space-evenly;">
-      
+    
       <div id="shadow-color"  style="box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;padding: 3vh;background-color: rgb(246, 246, 246);border: 2px solid white;border-radius: 10px;">
+        <div id="project-in-section" >
+          <h2 class="text-2xl text-white" id="title-project" style="color: #141C28;font-weight: 600;">Game Life</h2>
+          <p class="text-slate-950 font-thin">Challenge in the implementation of the Game of Life proposed by the Senegalese developer community.</p>
+          <h2>Langage: Tailwindcss</h2>
+          <div id="code-view" class="flex gap-4">
+            <a href="https://github.com/MLaminekane/game-life-">
+              <button class="cssbuttons-io" aria-label="Voir le code sur GitHub">
+                <span><i class="fa-sharp fa-solid fa-code" style="color: #ffffff;"></i>Code</span>
+              </button>
+            </a>
+            <a href="https://game-life-alpha.vercel.app/" >
+              <button class="cssbuttons-io-2" style="background-color: #23d2de;" aria-label="Voir la page en direct">
+                <span>Page</span>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="mt-3">
+          <img src="images/game-life.webp" alt="Teals Clone" width="500" height="300"  class="w-full h-auto md:h-108 object-cover">
+        </div>
+      </div>
+
+      <div id="shadow-color"  style="box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;padding: 3vh;background-color: #f0eeee;border: 2px solid white;border-radius: 10px;">
         <div id="project-in-section" >
           <h2 class="text-2xl text-white" id="title-project" style="color: #141C28;font-weight: 600;">School Planning Gestion</h2>
           <p class="text-slate-950 font-thin">I built this platform that can help you manage all aspects of your sewing studio using PHP and enhanced with essential Composer tools. Whether sales to customers or production runs with the supplier.</p>
@@ -147,7 +180,6 @@
           <img src="images/tesla.webp" alt="Teals Clone" width="500" height="300"  class="w-full h-auto md:h-108 object-cover">
         </div>
       </div>
-
 
       <div id="shadow-color"  style="box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;padding: 3vh;background-color: rgb(246, 246, 246);border: 2px solid white;border-radius: 10px;">
         <div id="project-in-section" >
@@ -196,18 +228,16 @@
         </div>
       </div>
 
+      
+
     </section>
   </div>
-
-
-
-
-
   
   <svg style="margin-top: 5vh;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path class="svg-form" fill="#141C28" fill-opacity="1" d="M0,96L30,117.3C60,139,120,181,180,197.3C240,213,300,203,360,192C420,181,480,171,540,176C600,181,660,203,720,229.3C780,256,840,288,900,298.7C960,309,1020,299,1080,272C1140,245,1200,203,1260,192C1320,181,1380,203,1410,213.3L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
+    <path class="svg-form" fill="#111745" fill-opacity="1" d="M0,96L30,117.3C60,139,120,181,180,197.3C240,213,300,203,360,192C420,181,480,171,540,176C600,181,660,203,720,229.3C780,256,840,288,900,298.7C960,309,1020,299,1080,272C1140,245,1200,203,1260,192C1320,181,1380,203,1410,213.3L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
   </svg>
-  <div id="contact" class="flex flex-col items-center w-full" style="background-color: #141C28;margin-top: -0.5vh;">
+
+  <div id="contact" class="flex flex-col items-center w-full" style="background-color: #111745;margin-top: -0.5vh;">
     <h1 style="font-size: 36px; font-weight: 800;" class="text-white mt-16">
       CONTACT
     </h1>
@@ -260,14 +290,9 @@
             <input required="required" type="text" id="name" name="name" class="form input">
             <i></i>
           </div>
-          <div class="inputbox mt-3">
-            <label for="email">Email</label>
-            <input required="required" type="email" id="email" name="email" class="form input">
-            <i></i>
-          </div>
-          <div class="form">
+          <div class="form" >
             <label for="message"></label>
-            <textarea placeholder="Say Hello" rows="6" id="message" name="message" class="form textarea mt-3" required></textarea>
+            <textarea placeholder="Message" rows="6" id="message" name="message" class="form textarea mt-3" required></textarea>
             <div class="button-container cursor-pointer">
               <button type="submit">
                 <div class="send-button">Send</div>
@@ -278,7 +303,7 @@
       </form>
            
     </div>
-    <div style="background-color: #141C28" class="w-full flex justify-center">
+    <div style="background-color: #2C2C54" class="w-full flex justify-center">
       <p class="text-white" >Lamine Kane <span style="color: red;">©2023</span></p>
     </div>
   </div>
@@ -287,5 +312,3 @@
   
 </body>
 </html>
-
-

@@ -27,11 +27,11 @@ let isDarkMode = false;
 changeColor.addEventListener('click', () => {
   isDarkMode = !isDarkMode;
 
-  document.body.style.backgroundColor = isDarkMode ? 'black' : ''; 
+  document.body.style.backgroundColor = isDarkMode ? '#A9D6E5' : ''; 
 
   let projects = document.querySelector("#projects");
-  projects.style.backgroundColor = isDarkMode ? 'black' : (isDarkMode ? '' : '');
-  projects.style.color = isDarkMode ? 'white' : 'black'; 
+  // projects.style.backgroundColor = isDarkMode ? '#444444' : (isDarkMode ? '' : '');
+  projects.style.color = isDarkMode ? 'white' : '#444444'; 
 
   let projectBoxes = document.querySelectorAll("#project-no-page");
   projectBoxes.forEach(project => {
